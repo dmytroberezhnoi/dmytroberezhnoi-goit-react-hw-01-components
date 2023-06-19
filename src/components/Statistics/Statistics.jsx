@@ -1,5 +1,6 @@
 import css from '../Statistics/Statistics.module.css';
 import { getRandomColor } from '../../helpers/functions';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -21,4 +22,9 @@ export const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 };
